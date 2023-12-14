@@ -67,12 +67,6 @@ app.post('/', (req, res) => {
     res.send(arr)
 })
 
-
-
-
-//normal put
-           
-
 // normal delete
 app.delete('/user', (req, res) => {
     res.send('Got a DELETE request at /user')
@@ -91,7 +85,7 @@ app.delete('/user/:id', (req, res) => {
     }
 })
 
-app.listen(process.env.PORT ||  port, () => {
+app.listen( port, () => {
     console.log(`Example app listening on port ${port}`)
 })
 
